@@ -1,16 +1,20 @@
+import tasksSelect from '../database/select.db';
+import tasksInput from '../database/input.db';
+import Select from "./Select";
+import Input from './Input';
+
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
+        fontSize: 18,
         color: '#010101'
       }}
     >
-      ss-english-1
+      <Select tasks={tasksSelect} />
+      <hr />
+      <Input tasks={ tasksInput}/>
     </div>
   );
 };
